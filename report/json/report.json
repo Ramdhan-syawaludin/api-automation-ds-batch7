@@ -1,0 +1,312 @@
+{
+  "config": {
+    "configFile": "D:\\Dhani\\Portfolio Ramdhan\\DigitalSkola\\api-automation-ds-batch7\\playwright.config.js",
+    "rootDir": "D:/Dhani/Portfolio Ramdhan/DigitalSkola/api-automation-ds-batch7/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 2
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "report/json/report.json"
+        }
+      ],
+      [
+        "html",
+        {
+          "outputFolder": "report/html",
+          "open": "never"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "D:/Dhani/Portfolio Ramdhan/DigitalSkola/api-automation-ds-batch7/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "",
+        "name": "",
+        "testDir": "D:/Dhani/Portfolio Ramdhan/DigitalSkola/api-automation-ds-batch7/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.49.1",
+    "workers": 2,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "api-test.spec.js",
+      "file": "api-test.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "TC-1 GET List Users",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "failed",
+                  "duration": 712,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"9\"\u001b[39m\nReceived: \u001b[31mundefined\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"9\"\u001b[39m\nReceived: \u001b[31mundefined\u001b[39m\n    at D:\\Dhani\\Portfolio Ramdhan\\DigitalSkola\\api-automation-ds-batch7\\tests\\api-test.spec.js:14:29",
+                    "matcherResult": {
+                      "expected": "9",
+                      "message": "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"9\"\u001b[39m\nReceived: \u001b[31mundefined\u001b[39m",
+                      "name": "toBe",
+                      "pass": false
+                    },
+                    "location": {
+                      "file": "D:\\Dhani\\Portfolio Ramdhan\\DigitalSkola\\api-automation-ds-batch7\\tests\\api-test.spec.js",
+                      "column": 29,
+                      "line": 14
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 12 |\u001b[39m     \u001b[36mconst\u001b[39m responseData \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m response\u001b[33m.\u001b[39mjson()\n \u001b[90m 13 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 14 |\u001b[39m     expect(responseData\u001b[33m.\u001b[39mid)\u001b[33m.\u001b[39mtoBe(\u001b[32m\"9\"\u001b[39m)\n \u001b[90m    |\u001b[39m                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 15 |\u001b[39m     expect(responseData\u001b[33m.\u001b[39mfirst_name)\u001b[33m.\u001b[39mtoBe(\u001b[32m\"Tobias\"\u001b[39m)\n \u001b[90m 16 |\u001b[39m     expect(responseData\u001b[33m.\u001b[39mlast_name)\u001b[33m.\u001b[39mtoBe(\u001b[32m\"Funke\"\u001b[39m)\n \u001b[90m 17 |\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\Dhani\\Portfolio Ramdhan\\DigitalSkola\\api-automation-ds-batch7\\tests\\api-test.spec.js",
+                        "column": 29,
+                        "line": 14
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"9\"\u001b[39m\nReceived: \u001b[31mundefined\u001b[39m\n\n\u001b[0m \u001b[90m 12 |\u001b[39m     \u001b[36mconst\u001b[39m responseData \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m response\u001b[33m.\u001b[39mjson()\n \u001b[90m 13 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 14 |\u001b[39m     expect(responseData\u001b[33m.\u001b[39mid)\u001b[33m.\u001b[39mtoBe(\u001b[32m\"9\"\u001b[39m)\n \u001b[90m    |\u001b[39m                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 15 |\u001b[39m     expect(responseData\u001b[33m.\u001b[39mfirst_name)\u001b[33m.\u001b[39mtoBe(\u001b[32m\"Tobias\"\u001b[39m)\n \u001b[90m 16 |\u001b[39m     expect(responseData\u001b[33m.\u001b[39mlast_name)\u001b[33m.\u001b[39mtoBe(\u001b[32m\"Funke\"\u001b[39m)\n \u001b[90m 17 |\u001b[39m\u001b[0m\n\u001b[2m    at D:\\Dhani\\Portfolio Ramdhan\\DigitalSkola\\api-automation-ds-batch7\\tests\\api-test.spec.js:14:29\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-12-23T11:54:15.499Z",
+                  "attachments": [],
+                  "errorLocation": {
+                    "file": "D:\\Dhani\\Portfolio Ramdhan\\DigitalSkola\\api-automation-ds-batch7\\tests\\api-test.spec.js",
+                    "column": 29,
+                    "line": 14
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "ea20521d6fcf43dcdb4f-2a90fa12c6780731c33f",
+          "file": "api-test.spec.js",
+          "line": 8,
+          "column": 1
+        },
+        {
+          "title": "TC-2 POST Create Users",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "status": "failed",
+                  "duration": 781,
+                  "error": {
+                    "message": "Error: no schema with key or ref \"http://json-schema.org/draft-04/schema#\"",
+                    "stack": "Error: no schema with key or ref \"http://json-schema.org/draft-04/schema#\"\n    at Ajv.validate (D:\\Dhani\\Portfolio Ramdhan\\DigitalSkola\\api-automation-ds-batch7\\node_modules\\ajv\\lib\\core.ts:362:21)\n    at Ajv.validateSchema (D:\\Dhani\\Portfolio Ramdhan\\DigitalSkola\\api-automation-ds-batch7\\node_modules\\ajv\\lib\\core.ts:519:24)\n    at Ajv._addSchema (D:\\Dhani\\Portfolio Ramdhan\\DigitalSkola\\api-automation-ds-batch7\\node_modules\\ajv\\lib\\core.ts:725:30)\n    at Ajv.compile (D:\\Dhani\\Portfolio Ramdhan\\DigitalSkola\\api-automation-ds-batch7\\node_modules\\ajv\\lib\\core.ts:388:22)\n    at Ajv.validate (D:\\Dhani\\Portfolio Ramdhan\\DigitalSkola\\api-automation-ds-batch7\\node_modules\\ajv\\lib\\core.ts:364:16)\n    at D:\\Dhani\\Portfolio Ramdhan\\DigitalSkola\\api-automation-ds-batch7\\tests\\api-test.spec.js:50:23",
+                    "location": {
+                      "file": "D:\\Dhani\\Portfolio Ramdhan\\DigitalSkola\\api-automation-ds-batch7\\tests\\api-test.spec.js",
+                      "column": 23,
+                      "line": 50
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 48 |\u001b[39m     expect(resBody\u001b[33m.\u001b[39mjob)\u001b[33m.\u001b[39mtoEqual(\u001b[32m\"musician\"\u001b[39m)\n \u001b[90m 49 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 50 |\u001b[39m     \u001b[36mconst\u001b[39m valid \u001b[33m=\u001b[39m ajv\u001b[33m.\u001b[39mvalidate(require(\u001b[32m'./jsonschema/post-create-users-schema.json'\u001b[39m)\u001b[33m,\u001b[39m resBody)\n \u001b[90m    |\u001b[39m                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 51 |\u001b[39m\n \u001b[90m 52 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mvalid) {\n \u001b[90m 53 |\u001b[39m         console\u001b[33m.\u001b[39merror(\u001b[32m\"Ajv Validation Error:\"\u001b[39m\u001b[33m,\u001b[39m ajv\u001b[33m.\u001b[39merrorsText())\u001b[33m;\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\Dhani\\Portfolio Ramdhan\\DigitalSkola\\api-automation-ds-batch7\\tests\\api-test.spec.js",
+                        "column": 23,
+                        "line": 50
+                      },
+                      "message": "Error: no schema with key or ref \"http://json-schema.org/draft-04/schema#\"\n\n\u001b[0m \u001b[90m 48 |\u001b[39m     expect(resBody\u001b[33m.\u001b[39mjob)\u001b[33m.\u001b[39mtoEqual(\u001b[32m\"musician\"\u001b[39m)\n \u001b[90m 49 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 50 |\u001b[39m     \u001b[36mconst\u001b[39m valid \u001b[33m=\u001b[39m ajv\u001b[33m.\u001b[39mvalidate(require(\u001b[32m'./jsonschema/post-create-users-schema.json'\u001b[39m)\u001b[33m,\u001b[39m resBody)\n \u001b[90m    |\u001b[39m                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 51 |\u001b[39m\n \u001b[90m 52 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mvalid) {\n \u001b[90m 53 |\u001b[39m         console\u001b[33m.\u001b[39merror(\u001b[32m\"Ajv Validation Error:\"\u001b[39m\u001b[33m,\u001b[39m ajv\u001b[33m.\u001b[39merrorsText())\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at Ajv.validate (D:\\Dhani\\Portfolio Ramdhan\\DigitalSkola\\api-automation-ds-batch7\\node_modules\\ajv\\lib\\core.ts:362:21)\u001b[22m\n\u001b[2m    at Ajv.validateSchema (D:\\Dhani\\Portfolio Ramdhan\\DigitalSkola\\api-automation-ds-batch7\\node_modules\\ajv\\lib\\core.ts:519:24)\u001b[22m\n\u001b[2m    at Ajv._addSchema (D:\\Dhani\\Portfolio Ramdhan\\DigitalSkola\\api-automation-ds-batch7\\node_modules\\ajv\\lib\\core.ts:725:30)\u001b[22m\n\u001b[2m    at Ajv.compile (D:\\Dhani\\Portfolio Ramdhan\\DigitalSkola\\api-automation-ds-batch7\\node_modules\\ajv\\lib\\core.ts:388:22)\u001b[22m\n\u001b[2m    at Ajv.validate (D:\\Dhani\\Portfolio Ramdhan\\DigitalSkola\\api-automation-ds-batch7\\node_modules\\ajv\\lib\\core.ts:364:16)\u001b[22m\n\u001b[2m    at D:\\Dhani\\Portfolio Ramdhan\\DigitalSkola\\api-automation-ds-batch7\\tests\\api-test.spec.js:50:23\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-12-23T11:54:15.535Z",
+                  "attachments": [],
+                  "errorLocation": {
+                    "file": "D:\\Dhani\\Portfolio Ramdhan\\DigitalSkola\\api-automation-ds-batch7\\tests\\api-test.spec.js",
+                    "column": 23,
+                    "line": 50
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "ea20521d6fcf43dcdb4f-f4574673952e3baef9de",
+          "file": "api-test.spec.js",
+          "line": 27,
+          "column": 1
+        },
+        {
+          "title": "TC-3 DELETE Users",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "status": "failed",
+                  "duration": 710,
+                  "error": {
+                    "message": "SyntaxError: Unexpected end of JSON input",
+                    "stack": "SyntaxError: Unexpected end of JSON input\n    at D:\\Dhani\\Portfolio Ramdhan\\DigitalSkola\\api-automation-ds-batch7\\tests\\api-test.spec.js:63:26",
+                    "location": {
+                      "file": "D:\\Dhani\\Portfolio Ramdhan\\DigitalSkola\\api-automation-ds-batch7\\tests\\api-test.spec.js",
+                      "column": 26,
+                      "line": 63
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 61 |\u001b[39m     expect(response\u001b[33m.\u001b[39mstatus())\u001b[33m.\u001b[39mtoBe(\u001b[35m204\u001b[39m)\n \u001b[90m 62 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 63 |\u001b[39m     \u001b[36mconst\u001b[39m responseData \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m response\u001b[33m.\u001b[39mjson()\n \u001b[90m    |\u001b[39m                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 64 |\u001b[39m\n \u001b[90m 65 |\u001b[39m     expect(responseData\u001b[33m.\u001b[39mname)\u001b[33m.\u001b[39mtoBe()\n \u001b[90m 66 |\u001b[39m     expect(responseData\u001b[33m.\u001b[39mjob)\u001b[33m.\u001b[39mtoBe()\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\Dhani\\Portfolio Ramdhan\\DigitalSkola\\api-automation-ds-batch7\\tests\\api-test.spec.js",
+                        "column": 26,
+                        "line": 63
+                      },
+                      "message": "SyntaxError: Unexpected end of JSON input\n\n\u001b[0m \u001b[90m 61 |\u001b[39m     expect(response\u001b[33m.\u001b[39mstatus())\u001b[33m.\u001b[39mtoBe(\u001b[35m204\u001b[39m)\n \u001b[90m 62 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 63 |\u001b[39m     \u001b[36mconst\u001b[39m responseData \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m response\u001b[33m.\u001b[39mjson()\n \u001b[90m    |\u001b[39m                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 64 |\u001b[39m\n \u001b[90m 65 |\u001b[39m     expect(responseData\u001b[33m.\u001b[39mname)\u001b[33m.\u001b[39mtoBe()\n \u001b[90m 66 |\u001b[39m     expect(responseData\u001b[33m.\u001b[39mjob)\u001b[33m.\u001b[39mtoBe()\u001b[0m\n\u001b[2m    at D:\\Dhani\\Portfolio Ramdhan\\DigitalSkola\\api-automation-ds-batch7\\tests\\api-test.spec.js:63:26\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-12-23T11:54:18.469Z",
+                  "attachments": [],
+                  "errorLocation": {
+                    "file": "D:\\Dhani\\Portfolio Ramdhan\\DigitalSkola\\api-automation-ds-batch7\\tests\\api-test.spec.js",
+                    "column": 26,
+                    "line": 63
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "ea20521d6fcf43dcdb4f-9c4c1eaa98e4ff5ec498",
+          "file": "api-test.spec.js",
+          "line": 59,
+          "column": 1
+        },
+        {
+          "title": "TC-4 PUT Update Users",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "status": "failed",
+                  "duration": 735,
+                  "error": {
+                    "message": "Error: no schema with key or ref \"http://json-schema.org/draft-04/schema#\"",
+                    "stack": "Error: no schema with key or ref \"http://json-schema.org/draft-04/schema#\"\n    at Ajv.validate (D:\\Dhani\\Portfolio Ramdhan\\DigitalSkola\\api-automation-ds-batch7\\node_modules\\ajv\\lib\\core.ts:362:21)\n    at Ajv.validateSchema (D:\\Dhani\\Portfolio Ramdhan\\DigitalSkola\\api-automation-ds-batch7\\node_modules\\ajv\\lib\\core.ts:519:24)\n    at Ajv._addSchema (D:\\Dhani\\Portfolio Ramdhan\\DigitalSkola\\api-automation-ds-batch7\\node_modules\\ajv\\lib\\core.ts:725:30)\n    at Ajv.compile (D:\\Dhani\\Portfolio Ramdhan\\DigitalSkola\\api-automation-ds-batch7\\node_modules\\ajv\\lib\\core.ts:388:22)\n    at Ajv.validate (D:\\Dhani\\Portfolio Ramdhan\\DigitalSkola\\api-automation-ds-batch7\\node_modules\\ajv\\lib\\core.ts:364:16)\n    at D:\\Dhani\\Portfolio Ramdhan\\DigitalSkola\\api-automation-ds-batch7\\tests\\api-test.spec.js:100:23",
+                    "location": {
+                      "file": "D:\\Dhani\\Portfolio Ramdhan\\DigitalSkola\\api-automation-ds-batch7\\tests\\api-test.spec.js",
+                      "column": 23,
+                      "line": 100
+                    },
+                    "snippet": "\u001b[0m \u001b[90m  98 |\u001b[39m     expect(resBody\u001b[33m.\u001b[39mjob)\u001b[33m.\u001b[39mtoEqual(\u001b[32m\"artist\"\u001b[39m)\n \u001b[90m  99 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 100 |\u001b[39m     \u001b[36mconst\u001b[39m valid \u001b[33m=\u001b[39m ajv\u001b[33m.\u001b[39mvalidate(require(\u001b[32m'./jsonschema/put-update-users-schema.json'\u001b[39m)\u001b[33m,\u001b[39m resBody)\n \u001b[90m     |\u001b[39m                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 101 |\u001b[39m\n \u001b[90m 102 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mvalid) {\n \u001b[90m 103 |\u001b[39m         console\u001b[33m.\u001b[39merror(\u001b[32m\"Ajv Validation Error:\"\u001b[39m\u001b[33m,\u001b[39m ajv\u001b[33m.\u001b[39merrorsText())\u001b[33m;\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\Dhani\\Portfolio Ramdhan\\DigitalSkola\\api-automation-ds-batch7\\tests\\api-test.spec.js",
+                        "column": 23,
+                        "line": 100
+                      },
+                      "message": "Error: no schema with key or ref \"http://json-schema.org/draft-04/schema#\"\n\n\u001b[0m \u001b[90m  98 |\u001b[39m     expect(resBody\u001b[33m.\u001b[39mjob)\u001b[33m.\u001b[39mtoEqual(\u001b[32m\"artist\"\u001b[39m)\n \u001b[90m  99 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 100 |\u001b[39m     \u001b[36mconst\u001b[39m valid \u001b[33m=\u001b[39m ajv\u001b[33m.\u001b[39mvalidate(require(\u001b[32m'./jsonschema/put-update-users-schema.json'\u001b[39m)\u001b[33m,\u001b[39m resBody)\n \u001b[90m     |\u001b[39m                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 101 |\u001b[39m\n \u001b[90m 102 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mvalid) {\n \u001b[90m 103 |\u001b[39m         console\u001b[33m.\u001b[39merror(\u001b[32m\"Ajv Validation Error:\"\u001b[39m\u001b[33m,\u001b[39m ajv\u001b[33m.\u001b[39merrorsText())\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at Ajv.validate (D:\\Dhani\\Portfolio Ramdhan\\DigitalSkola\\api-automation-ds-batch7\\node_modules\\ajv\\lib\\core.ts:362:21)\u001b[22m\n\u001b[2m    at Ajv.validateSchema (D:\\Dhani\\Portfolio Ramdhan\\DigitalSkola\\api-automation-ds-batch7\\node_modules\\ajv\\lib\\core.ts:519:24)\u001b[22m\n\u001b[2m    at Ajv._addSchema (D:\\Dhani\\Portfolio Ramdhan\\DigitalSkola\\api-automation-ds-batch7\\node_modules\\ajv\\lib\\core.ts:725:30)\u001b[22m\n\u001b[2m    at Ajv.compile (D:\\Dhani\\Portfolio Ramdhan\\DigitalSkola\\api-automation-ds-batch7\\node_modules\\ajv\\lib\\core.ts:388:22)\u001b[22m\n\u001b[2m    at Ajv.validate (D:\\Dhani\\Portfolio Ramdhan\\DigitalSkola\\api-automation-ds-batch7\\node_modules\\ajv\\lib\\core.ts:364:16)\u001b[22m\n\u001b[2m    at D:\\Dhani\\Portfolio Ramdhan\\DigitalSkola\\api-automation-ds-batch7\\tests\\api-test.spec.js:100:23\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-12-23T11:54:18.563Z",
+                  "attachments": [],
+                  "errorLocation": {
+                    "file": "D:\\Dhani\\Portfolio Ramdhan\\DigitalSkola\\api-automation-ds-batch7\\tests\\api-test.spec.js",
+                    "column": 23,
+                    "line": 100
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "ea20521d6fcf43dcdb4f-19664cbc07eee48f9cf3",
+          "file": "api-test.spec.js",
+          "line": 77,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2024-12-23T11:54:12.633Z",
+    "duration": 6744.0999999999985,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 4,
+    "flaky": 0
+  }
+}
